@@ -10,26 +10,13 @@ public class BikeManufacturer {
 
     }
     private static Bike buildBike(String bikeType) {
-        if (bikeType.equalsIgnoreCase("ROAD")) {
-            var roadBikeFactory = new RoudBikeFactory();
-            var handleBars = roadBikeFactory.createHandlebars();
-            var pedals = roadBikeFactory.createPedals();
-            var frontTIre = roadBikeFactory.createTire();
-            var backTire = roadBikeFactory.createTire();
+        var bikeFactory = FactoryMaker.makeFactory(bikeType);
+        var handlebars = bikeFactory.createHandlebars();
+        var pedalBars = bikeFactory.createPedals();
+        var frontTire = bikeFactory.createTire();
+        var backTire = bikeFactory.createTire();
 
-            return new Bike(handleBars, pedals, frontTIre, backTire);
-        } else if (bikeType.equalsIgnoreCase("MOUNTAIN")) {
-            var mountainBikeFactory = new MountainBikeFactory();
-            var handleBars = mountainBikeFactory.createHandlebars();
-            var pedals = mountainBikeFactory.createPedals();
-            var frontTIre = mountainBikeFactory.createTire();
-            var backTire = mountainBikeFactory.createTire();
-
-            return new Bike(handleBars, pedals, frontTIre, backTire);
-        } else {
-            throw new IllegalArgumentException("Bike type not supported");
-        }
-
+        return new Bike(handlebars, pedalBars, frontTire, backTire);
     }
 }
 
