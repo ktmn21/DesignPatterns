@@ -3,8 +3,9 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/CreationalDesignPattern/Factory" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CreationalDesignPattern/store/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CreationalDesignPattern/AbstrstractFactoryDP/BikeFactory/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CreationalDesignPattern/FactoryDP/Factory" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CreationalDesignPattern/FactoryDP/store/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
