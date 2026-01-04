@@ -6,7 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/CreationalDesignPattern/AbstrstractFactoryDP/BikeFactory/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CreationalDesignPattern/FactoryDP/Factory" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CreationalDesignPattern/FactoryDP/store/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CreationalDesignPattern/AbstrstractFactoryDP/ChellangeUI/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StructuralDesignPattern/Adapter Patterns/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
