@@ -3,18 +3,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Song implements  Playable{
-    private final List<Note> notes = new ArrayList<>();
+    private final List<Playable> notes = new ArrayList<>();
 
-    public void addNote(Note note) {
+    public void addNote(Playable note) {
         notes.add(note);
     }
 
-    public List<Note> getNotes() {
+    public List<Playable> getNotes() {
         return notes;
     }
 
     @Override
     public void play() {
-        notes.forEach(Note::play);
+        notes.forEach(Playable::play);
     }
 }
