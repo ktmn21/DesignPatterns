@@ -1,9 +1,8 @@
-public class MediaStoppedState extends MediaState{
-
+public class MediaStoppedState implements MediaState{
 
     @Override
     public void pressButton(MediaPlayer mediaPlayer) {
-        super.play();
+        mediaPlayer.play();
         mediaPlayer.setState(new MediaPlayingState());
     }
 }
