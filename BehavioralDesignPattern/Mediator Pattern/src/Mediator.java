@@ -7,13 +7,17 @@ public class Mediator {
         this.trafficLight = trafficLight;
     }
 
-    public void changeToRed(){
+    public void changeTrafficToRed(){
         trafficLight.changeToRed();
         pedestrianCrossingLight.changeToGreen();
     }
 
-    public void changeToGreen(){
+    public void changeTrafficToGreen(){
         trafficLight.changeToGreen();
         pedestrianCrossingLight.changeToRed();
+    }
+
+    public void changeTrafficToAmber(){
+        trafficLight.changeToAmber();
     }
 }
