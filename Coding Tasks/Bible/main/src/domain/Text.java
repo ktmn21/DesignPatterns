@@ -1,0 +1,9 @@
+package domain;
+
+import java.util.List;
+
+public interface Text {
+    int getNumberOfWords();
+
+    List<Verse> getVersesContainingWord(String word);
+}
